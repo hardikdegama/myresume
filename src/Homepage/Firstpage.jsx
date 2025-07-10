@@ -6,7 +6,7 @@ function Firstpage() {
     <>
   <div className="container">
     <div className="profile-wrapper">
-      <img src="/public/My Profile Photo.jpeg" alt="Profile" className="profile-image" />
+      <img src="/My Profile Photo.jpeg" alt="Profile" className="profile-image" />
     </div>
     <div className="text-wrapper">
   <h1 className="fade-in">
