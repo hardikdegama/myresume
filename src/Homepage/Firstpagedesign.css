@@ -1,0 +1,85 @@
+
+  body {
+  background-color: #121212;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  
+}
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-left: 100px;
+  gap: 60px;
+}
+
+.profile-wrapper {
+  width: 100px;
+  height: 200px;
+  padding: 5px;
+  background-color: #121212;
+  transition: transform 1s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 200px;
+}
+.profile-wrapper:hover {
+  transform: rotate(360deg);
+}
+
+.profile-image {
+  width: 800%;
+  height: 200%;
+  object-fit: cover;
+  display: block;
+  border-radius: 20%;
+  box-shadow: 0 4px 30px blue;
+}
+
+.text-wrapper {
+  color: rgb(4, 167, 208);
+  padding: 25px 35px;
+  box-shadow: 0 4px 30px rgba(4, 68, 217, 0.5);
+  margin-left: 350px;
+  margin-top: 25%;
+  border-radius: 20%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Text style */
+.text-wrapper h1 {
+  font-size: 50px;
+  margin: 0;
+  line-height: 1.5;
+  transition: font-size 0.3s ease; /* smooth size change */
+  cursor: pointer; /* show pointer on hover */
+}
+
+/* Hover effect: make text bigger */
+.text-wrapper h1:hover {
+  font-size: 80px;
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
