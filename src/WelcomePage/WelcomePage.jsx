@@ -11,7 +11,7 @@ function Welcome() {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('/home');
-    }, 8000); // 5 seconds delay
+    }, 5000); // 5 seconds delay
 
     return () => clearTimeout(timer);
   }, [navigate]);
