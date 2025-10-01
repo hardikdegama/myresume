@@ -213,7 +213,7 @@ const App = () => {
                 <div className="container about-content">
                     
                     <div className="profile-area">
-                        <img src="/public/profile_photo.jpeg" 
+                        <img src="/src/profile_photo.jpeg" 
                             alt="Your Professional Photo" 
                             className="profile-picture"
                             onError={(e) => {
@@ -385,7 +385,7 @@ const App = () => {
                     
                     <div className="project-item project-left-photo">
                         <div className="project-image">
-                            <img src="/public/Project_1.webp" 
+                            <img src="/src/Project_1.webp" 
                                 alt="Project 1" 
                                 onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/400x250/4CAF50/ffffff?text=Project+1"; }}
                             />
@@ -421,7 +421,7 @@ const App = () => {
                             
                         </div>
                         <div className="project-image">
-                            <img src="/public/Project_2.avif" 
+                            <img src="/src/Project_2.avif" 
                                 alt="Project 2" 
                                 onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/400x250/2196F3/ffffff?text=Project+2"; }}
                             />
