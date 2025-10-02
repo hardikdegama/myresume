@@ -421,7 +421,7 @@ const App = () => {
                             
                         </div>
                         <div className="project-image">
-                            <img src="/src/Project_2.avif" 
+                            <img src="/Project_2.avif" 
                                 alt="Project 2" 
                                 onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/400x250/2196F3/ffffff?text=Project+2"; }}
                             />
