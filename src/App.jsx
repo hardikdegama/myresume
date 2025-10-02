@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "./style.css"
+import my_photo from './profile_photo.jpeg';
+import project_1 from "./Project_1.webp";
+import project_2 from "./Project_2.avif";
 
 
 const themes = [
@@ -213,7 +216,7 @@ const App = () => {
                 <div className="container about-content">
                     
                     <div className="profile-area">
-                        <img src="/src/profile_photo.jpeg" 
+                        <img src={my_photo} 
                             alt="Your Professional Photo" 
                             className="profile-picture"
                             onError={(e) => {
@@ -385,7 +388,7 @@ const App = () => {
                     
                     <div className="project-item project-left-photo">
                         <div className="project-image">
-                            <img src="/src/Project_1.webp" 
+                            <img src={project_1}
                                 alt="Project 1" 
                                 onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/400x250/4CAF50/ffffff?text=Project+1"; }}
                             />
@@ -421,7 +424,7 @@ const App = () => {
                             
                         </div>
                         <div className="project-image">
-                            <img src="/Project_2.avif" 
+                            <img src={project_2} 
                                 alt="Project 2" 
                                 onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/400x250/2196F3/ffffff?text=Project+2"; }}
                             />
